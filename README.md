@@ -38,7 +38,7 @@ When you generate the QR code, it appears there.
 ` pip install pyinstaller `
 
 - And lastly, run this one:
-` pyinstaller --onedir --noconsole --noconfirm --name "QR Code Generator" --icon "icon.ico" --add-data "icon.ico;." --add-data "README.md;." main.py `
+` pyinstaller --onedir --noconsole --noconfirm --name "QR Code Generator" --icon "icon.ico" --add-data "icon.ico;." --add-data "README.md;." --hidden-import "qrcode" --paths="C:\Users\~\AppData\Local\Programs\Python\Python311\Lib\site-packages\qrcode" main.py `
 
 - Open the dist folder and run "QR Code Generator.exe".
 
